@@ -4,7 +4,7 @@
       <input type="text" matInput placeholder="Laissez un commentaire…"
       [formControl]="commentCtrl">
     </mat-form-field>
-    <button mat-icon-button color="primary" (click)="onLeaveComment">
+    <button mat-icon-button color="primary" (click)="onLeaveComment()">
       <mat-icon>send</mat-icon>
     </button>
   </div>
@@ -12,6 +12,6 @@
     <h2 matSubheader>Commentaires</h2>
     <mat-list-item *ngFor="let comment of comments">
       <span mat-line>{{ comment.comment }}</span>
-      <span mat-line>{{ comment.createdDate | date }}</span>
+      <span mat-line>{{ comment.createdDate | timeAgo }}</span>
     </mat-list-item>
   </mat-list>
