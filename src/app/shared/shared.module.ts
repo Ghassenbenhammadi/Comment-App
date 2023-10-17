@@ -22,7 +22,7 @@ import { HighlightDirective } from './directives/highlight.directive';
   imports: [
     CommonModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   exports:[
     CommentsComponent,
@@ -31,8 +31,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     shortenPipe,
     UsernamePipe,
     TimeAgoPipe,
-    HighlightDirective
-    
+    HighlightDirective 
   ]
 })
 export class SharedModule { }
