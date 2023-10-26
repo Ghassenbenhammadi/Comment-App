@@ -16,8 +16,6 @@ import { HighlightDirective } from './directives/highlight.directive';
     UsernamePipe,
     TimeAgoPipe,
     HighlightDirective
-   
-    
   ],
   imports: [
     CommonModule,
